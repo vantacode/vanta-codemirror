@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { StyledCodeMirror } from 'CodeMirror'
+import { StyledCodeMirror } from '../src'
 import { injectGlobal } from 'styled-components';
 import styled from 'styled-components'
 

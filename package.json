@@ -10,7 +10,8 @@
     "dist": "webpack --env dist",
     "lint:js": "standard"
   },
-  "module": "dist/",
+  "module": "src/index.js",
+  "browser": "src/index.js",
   "keywords": [
     "react",
     "react-component"
