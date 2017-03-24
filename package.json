@@ -6,14 +6,6 @@
   "main": "src/index.js",
   "author": "Eddie Wang",
   "license": "MIT",
-  "homepage": "https://github.com/eddiewang/react-component-starter",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eddiewang/react-component-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/eddiewang/react-component-starter/issues"
-  },
   "scripts": {
     "start": "webpack-dev-server",
     "dist": "webpack --env dist",
