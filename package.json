@@ -1,5 +1,5 @@
 {
-  "name": "vanta-editor",
+  "name": "vanta-codemirror",
   "version": "0.0.3",
   "description": "Vanta Codemirror Component",
   "main": "src/index.js",
