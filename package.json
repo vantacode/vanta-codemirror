@@ -2,16 +2,19 @@
   "name": "vanta-codemirror",
   "version": "0.0.7",
   "description": "Vanta Codemirror Component",
-  "main": "src/index.js",
+  "main": "dist",
   "author": "Eddie Wang",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "dist": "webpack --env dist",
+    "dist": "webpack --env build",
+    "dist:modules": "rimraf ./dist-modules && babel ./src --out-dir ./dist",
+    "prepublish": "npm run dist:modules",
     "lint:js": "standard"
   },
-  "module": "src/index.js",
-  "browser": "src/index.js",
+  "module": "dist",
+  "jsnext:main": "src",
+  "browser": "dist",
   "keywords": [
     "react",
     "react-component"
