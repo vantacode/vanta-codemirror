@@ -5,7 +5,7 @@ var WebpackDevServer = require('webpack-dev-server');
 var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-var appName = 'app';
+var appName = 'index';
 var host = '0.0.0.0';
 var port = '9000';
 

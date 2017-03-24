@@ -43,7 +43,7 @@ class CodeMirror extends Component {
 		}
 	}
 
-	componentWillReceiveProps = (nextProps) => {
+  componentWillReceiveProps = (nextProps) => {
 		if (this.codeMirror && nextProps.value !== undefined && normalizeLineEndings(this.codeMirror.getValue()) !== normalizeLineEndings(nextProps.value)) {
 			if (this.props.preserveScrollPosition) {
 				let prevScrollPosition = this.codeMirror.getScrollInfo()
