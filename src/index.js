@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import cn from 'classnames'
 import debounce from 'lodash/debounce'
 import styled from 'styled-components'
-
+import { findDOMNode } from 'react-dom'
 function normalizeLineEndings(str) {
 	if (!str) return str;
 	return str.replace(/\r\n|\r/g, '\n');
@@ -26,7 +26,7 @@ class CodeMirror extends Component {
 	}
 
 	componentDidMount () {
-		const textareaNode = this.refs.textarea
+    const textareaNode = findDOMNode(this.refs.textarea)
 		const codeMirrorInstance = this.getCodeMirrorInstance()
 		this.codeMirror = codeMirrorInstance.fromTextArea(textareaNode, this.props.options)
 		this.codeMirror.on('change', this.codemirrorValueChanged)
